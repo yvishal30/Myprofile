@@ -1,0 +1,63 @@
+.card{
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  
+  
+  }
+  
+  
+  .card-img-top{
+      height:263px;
+  }
+  
+.container-maindiv{
+    padding-left: 200px;
+    padding-top: 100px;
+}  
+
+.container-aboutdiv{
+    padding-left: 200px;
+    padding-top: 100px;
+}  
+/* .container-skills{
+    padding-left: 200px;
+    padding-top: 10px;
+}  
+
+.container-contactdiv{
+    padding-left: 200px;
+    padding-top: 10px;
+}   */
+
+.img{
+    padding-left: 250px;
+    width: 200px;
+    height: 200px;
+    
+}
+
+.container-aboutdiv{
+    padding-left: 200px;
+    padding-top: 100px;
+    /* background-image: linear-gradient(to diagonally, purple,blue ,yellow); */
+}
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+    float: right;
+    background: linear-gradient(to right, #fd746c 0%, #ff9068 100%);
+    color: white;
+    border-radius:20px;
+}
+
+.skillimg{
+    width: 500px;
+    height: 450px;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
