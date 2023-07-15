@@ -1,6 +1,14 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-12FEP7SRN3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-12FEP7SRN3');
+</script>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,6 +18,62 @@
     <link rel="stylesheet" href="styles.css">
 
     <title>Contact</title>
+     <style>
+      body {
+          font-family: Arial, sans-serif;
+          background-color: #f1f1f1;
+      }
+      
+      .container {
+          max-width: 500px;
+          margin: 50px auto;
+          background-color: #fff;
+          padding: 20px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          align-items: center;
+      }
+      
+      h1 {
+          text-align: center;
+      }
+      
+      .form-group {
+          margin-bottom: 20px;
+      }
+      
+      .form-group label {
+          display: block;
+          font-weight: bold;
+          margin-bottom: 5px;
+      }
+      
+      .form-group input,
+      .form-group textarea {
+          width: 100%;
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+      }
+      
+      .form-group textarea {
+          height: 100px;
+      }
+      
+      .form-group button {
+          display: block;
+          width: 100%;
+          padding: 10px;
+          border: none;
+          background-color: rgb(230,104,59);
+          color: #fff;
+          cursor: pointer;
+          border-radius: 4px;
+      }
+      
+      .form-group button:hover {
+          background-color: rgb(59,174,209);
+      }
+  </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
@@ -32,27 +96,43 @@
       </div>
       </nav>
 
-      <div class="container-contactdiv" style="background-color:#333;color: #fff;
-      padding: 20px;text-align: center;height: 20%;width: 100%">
-        <h3 style='color:#f7ae31'><center>&emsp;<b>"Contact Details"</h3><hr>
-
-        <div class="row">
-          <div class="col-lg-6">
+     
             
-            <div class="container-fluid">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              
-              <h5>Name : Vishal Yadav</h5>
-              <h5>Contact No. : 7506892139</h5>
-              <h5>Email : 30vishalyadav@gmail.com</h5>
-            </div>
-          </div>
-          <div class="col-lg-6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <h4>Links:</h4>
-            <ul>
-              <a style='color:rgb(0, 204, 255)' href="https://www.instagram.com/vishal_yadav_30">Instagram</a><br>
-              <a style='color:rgb(0, 247, 255)' href="https://github.com/yvishal30">Github</a>
-            </ul>
-             
+            <div class="container">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <h1>Contact Me</h1>
+              <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Send Message</button>
+                </div>
+            </form>
+        </div> </div>
+        <script>
+            document.getElementById('contactForm').addEventListener('submit', function (event) {
+                event.preventDefault(); // Prevent form submission
+                var form = event.target;
+                var name = form.elements['name'].value;
+                var email = form.elements['email'].value;
+                var message = form.elements['message'].value;
+    
+                var mailtoLink = 'mailto:30vishalyadav@gmail.com' +
+                    '?subject=' + encodeURIComponent('Contact Form Submission') +
+                    '&body=' + encodeURIComponent('Name: ' + name + '\n\nEmail: ' + email + '\n\nMessage: ' + message);
+    
+                window.location.href = mailtoLink;
+            });
+        </script>
           </div>
         </div>
     </div>
