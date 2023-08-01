@@ -60,4 +60,47 @@
     padding: 20px;
     text-align: center;
   }
-  
+
+.image{
+width: 30%;
+height: 60%;
+position: absolute;
+right: 100px;
+bottom: 0;
+}
+.image img{
+position: absolute;
+height: 140%;
+left: 40%;
+transform: translate(-45%);
+bottom: 300px;
+transition: left 2s ease;
+top: -200px;
+}
+
+.image:hover img{
+left: 45%;
+}
+
+.icon a{
+text-decoration: none;
+color: #000;
+
+}
+
+.icon ion-icon{
+margin-left: 7%;
+color: #000;
+margin-right: -60px;
+font-size: 40px;
+transition: .4s ease;
+}
+
+.icon ion-icon:hover{
+color: rgb(59,174,209);
+}
+
+.icon{
+    padding-left: 100px;
+    padding-top: 1px;
+}
