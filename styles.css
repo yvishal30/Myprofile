@@ -110,6 +110,7 @@ color: rgb(59,174,209);
 .wrapper{
 width: 40%;
 height: 50%;
+margin-top:30px;
 min-width: 570px;
 min-height: 570px;
 position: absolute;
