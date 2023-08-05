@@ -119,7 +119,7 @@ top: 50%;
 }
 .container{
 width: 100%;
-
+margin:top;
 padding: 30px 30px 50px;
 background-color: white;
 border-radius: 10px;
