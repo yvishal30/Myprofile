@@ -21,7 +21,191 @@
     <title>About</title>
   </head>
   <body>
+<style>
+      body {
+      background: #f7f7f7;
+      background-image: url("./images/bg.png"); 
+    }
+.project {
+  position: relative;
+  margin-top: 50px;
+  width: 500px;
+  height: 300px;
+}
 
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.5s ease;
+}
+
+.project:hover .overlay {
+  display: block;
+  background: rgba(0, 0, 0, .3);
+}
+
+img {
+  width: 500px;
+  height: 300px;
+  /* left: 0; */
+}
+
+.title {
+  position: absolute;
+  width: 500px;
+  left: 0;
+  top: 120px;
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  z-index: 1;
+  transition: top .5s ease;
+}
+
+.project:hover .title {
+  top: 90px;
+}
+
+.button {
+  position: absolute;
+  width: 500px;
+  left:0;
+  top: 180px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity .35s ease;
+}
+
+.button a {
+  width: 200px;
+  padding: 12px 48px;
+  text-align: center;
+  color: white;
+  border: solid 2px white;
+  z-index: 1;
+}
+
+.project:hover .button {
+    opacity: 1;
+  }
+  
+  img {
+  width: 100%;
+}
+
+a {
+  outline: none;
+  color: #3498db;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: #528cb3;
+}
+
+section.team { }
+
+.grid figure {
+  margin: 0.1em;
+  width: 340px;
+  height: 240px;
+  background: #3085a3;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.grid figure figcaption {
+  color: #fff;
+  font-size: 1.25em;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+  pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.grid figure figcaption > a {
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0;
+}
+
+figure.effect-steve {
+  z-index: auto;
+  background: #000;
+}
+
+figure.effect-steve:before {
+  box-shadow: 0 3px 30px rgba(0, 0, 0, 0.8);
+  opacity: 0;
+}
+
+figure.effect-steve figcaption {
+  z-index: 1;
+}
+
+figure.effect-steve p {
+  background: #f1f1f1;
+  color: #2d434e;
+}
+
+figure.effect-steve p {
+  margin-top: 1em;
+  padding: 0.5em;
+  font-weight: 800;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-steve:hover:before {
+  opacity: 1;
+}
+
+
+
+figure.effect-steve:hover p {
+  opacity: 1;
+}
+
+.grid figure,
+figcaption,
+img {
+  z-index: 0;
+}
+
+.grid figcaption p {
+  font-size: 16px;
+  font-weight: 200;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 25%;
+}
+    </style>
+    
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="#" ><span style="font-size: 2rem;"></span><img src="./images/logo1.png" style="width: 70px; height: 40px;" alt="" width="30" height="24" class="d-inline-block align-text-top">
@@ -55,8 +239,30 @@
                       experience in HTML, CSS, PHP, MySQL, Python and JavaScript and Programming also.<br>
                       My interest is in technologies since childhood how they work and how well we program them to enhance the processing of them. Also interested to develop websites, games, etc. using all programming languages. I'm Curious to know about the latest technology to increase my knowledge.</td>
                 
-                </table><br></br>
-                <h4>Education:</h4>
+                </table><br></br></br><br>
+                <h2>Projects</h2>
+      <h4>Mobile Comparison Website</h4>
+      <div class="project">
+        <img src="./images/mobile1.jpg" alt="" />
+        <p class="title">MynextPhone</p>
+        <div class="overlay"></div>
+        <div class="button"><a href="https://yvishal30.github.io/mobilecomparison/"> Know More? </a>
+          <figure class="effect-steve">
+          <figcaption>
+            <p>Its an static mobile comparison website which is made by using html, css and bootstrap 5 .It allows the user to compaire two mobile phones
+              based on their features like RAM,Processor,Display Resolution,etc. can choose the best One.</p>
+          </figcaption>
+        </figure>
+        </div>
+      </div>
+<br></br><br></br>
+      
+                
+            </div>
+          </div>
+          <div class="col-lg-6">
+
+            <h4>Education Details:</h4>
 
                 <table style="width:50%" class="table table-light table-striped">
                   <thead>
@@ -84,37 +290,25 @@
                           <td>2019</td>
                         </tr>
                    </tbody>
-                </table>
-                
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <h2>Projects</h2>
-      <h4>Mobile Comparison Website</h4>
-      <p>
-        <a href="https://yvishal30.github.io/mobilecomparison/"
-          >MynextPhone</a
-        >
-        Its an static mobile comparison website which is made by using html, css and bootstrap 5 .It allows the user to compaire two mobile phones
-        based on their features like RAM,Processor,Display Resolution,etc. can choose the best One.
-      </p>
-<br></br>
-      <h4>Blood Bank Management System</h4>
-      <p>
-        <a
-          href="https://github.com/yvishal30/blood_bank_management_system.git"
-          target="_blank"
-          >Blood Bank Management System</a
-        >
-        Its an dynamic blood bank management system website which is made by using html, css, php, MySql and bootstrap 5.It gives the contact and address details to patient that required blood of specific blood group.
-        You can also donate blood to the organization all the records are stored in our database.
-      </p>
+                </table><br><br><br><br>
 
-              
-              
+                <h4>Blood Bank Management System</h4>
+                <div class="project">
+                  <img src="./images/blood.jpeg" alt="" />
+                  <p class="title">Blood Bank</p>
+                  <div class="overlay"></div>
+                  <div class="button"><a href="https://github.com/yvishal30/blood_bank_management_system.git"> Know More? </a>
+                    <figure class="effect-steve">
+                      <figcaption>
+                        <p> Its an dynamic blood bank management system website made by using html, css, php, MySql and bootstrap 5.It gives the contact and address details to patient that required blood of specific blood group.
+                          You can also donate blood to the organization all the records are stored in our database.</p>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>              
           </div>
         </div>
-    </div><br></br>
+    </div><br>
     <div>
      <footer style="background-color:#130e0e;color: #fff;padding: 20px;text-align: center;height: 20%;width: 100%;margin-bottom: 0px;">
        <h6>@Copyright 2023 Vishal Yadav</h6>
