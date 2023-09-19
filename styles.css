@@ -123,6 +123,7 @@ left: 50%;
 top: 50%;
 }
 .container{
+font-family: 'Times New Roman', Times, serif;
 width: 100%;
 padding: 30px 30px 50px;
 background-color: white;
@@ -130,7 +131,6 @@ border-radius: 10px;
 box-shadow: 0 20px 30px rgba(0,0,0,0.2);
 } 
 .container *{
-font-family: 'Times New Roman', Times, serif;
 color: black;
 font-weight: 500;
 }
